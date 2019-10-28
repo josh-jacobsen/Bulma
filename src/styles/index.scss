@@ -1,0 +1,53 @@
+@import "../node_modules/bulma/css/bulma.css";
+
+$grey-darker: hsl(0, 0%, 21%) !default;
+$grey-dark: hsl(0, 0%, 29%) !default;
+$grey: hsl(0, 0%, 48%) !default;
+$grey-light: hsl(0, 0%, 71%) !default;
+$grey-lighter: hsl(0, 0%, 86%) !default;
+
+$white-ter: hsl(0, 0%, 96%) !default;
+$white-bis: hsl(0, 0%, 98%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$navbar-height: 3.25rem;
+
+.is-sidebar-menu {
+  padding: 2.5rem;
+  background: $grey-dark;
+  li a {
+    color: $white;
+  }
+}
+
+.columns {
+  &.is-fullheight {
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    .column {
+      overflow-y: auto;
+    }
+  }
+}
+
+.is-main-content {
+  background: $grey-lighter;
+}
+
+// .border {
+//   border-style: solid;
+//   border-width: 5px;
+//   border-color: darkslategrey;
+// }
+
+html,
+body {
+  margin: 0;
+  //   min-height: 100vh;
+  //   max-height: 100vh;
+  //   height: 100vh;
+}
